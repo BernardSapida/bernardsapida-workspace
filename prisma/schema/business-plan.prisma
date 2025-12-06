@@ -1,0 +1,19 @@
+model BusinessPlan {
+  id       Int                @id @default(autoincrement())
+  name     String             @unique
+  values   Json?
+  progress Int
+  status   BusinessPlanStatus
+  userId   String
+  user     User               @relation(fields: [userId], references: [id])
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("businessplans")
+}
+
+enum BusinessPlanStatus {
+  DRAFT
+  COMPLETED
+}

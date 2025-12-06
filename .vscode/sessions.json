@@ -1,0 +1,102 @@
+{
+	"$schema": "https://cdn.statically.io/gh/nguyenngoclongdev/cdn/main/schema/v11/terminal-keeper.json",
+	"theme": "tribe",
+	"active": "default",
+	"activateOnStartup": true,
+	"keepExistingTerminals": false,
+	"sessions": {
+		"default": [
+			{
+				"name": "Start Dev",
+				"autoExecuteCommands": true,
+				"icon": "notebook-execute",
+				"color": "terminal.ansiBlue",
+				"commands": ["npm run dev"]
+			},
+			{
+				"name": "Build",
+				"icon": "notebook-execute",
+				"color": "terminal.ansiBlue",
+				"commands": ["npm run build"]
+			},
+			{
+				"name": "Start Build",
+				"icon": "notebook-execute",
+				"color": "terminal.ansiBlue",
+				"commands": ["npm run start"]
+			},
+			{
+				"name": "Biome Check",
+				"icon": "check",
+				"color": "terminal.ansiYellow",
+				"commands": ["npm run check"]
+			},
+			{
+				"name": "Biome Check:Unsafe",
+				"icon": "check-all",
+				"color": "terminal.ansiYellow",
+				"commands": ["npm run check:unsafe"]
+			},
+			{
+				"name": "Biome Check:Write",
+				"icon": "notebook-edit",
+				"color": "terminal.ansiYellow",
+				"commands": ["npm run check:write"]
+			},
+			{
+				"name": "Cypress E2E Test",
+				"icon": "test-view-icon",
+				"color": "terminal.ansiBrightGreen",
+				"commands": ["npx cypress open"]
+			},
+			{
+				"name": "Unit Testing w/ UI",
+				"icon": "test-view-icon",
+				"color": "terminal.ansiBrightGreen",
+				"commands": ["npm run test:ui"]
+			},
+			{
+				"name": "Unit Testing Coverage",
+				"icon": "test-view-icon",
+				"color": "terminal.ansiBrightGreen",
+				"commands": ["npm run test:coverage"]
+			},
+			{
+				"name": "DB Generate",
+				"icon": "database",
+				"color": "terminal.ansiBrightRed",
+				"commands": ["npm run db:generate"]
+			},
+			{
+				"name": "DB Migrate",
+				"icon": "database",
+				"color": "terminal.ansiBrightRed",
+				"commands": ["npm run db:migrate"]
+			},
+			{
+				"name": "DB Push",
+				"icon": "database",
+				"color": "terminal.ansiBrightRed",
+				"commands": ["npm run db:push"]
+			},
+			{
+				"name": "DB Seed",
+				"icon": "database",
+				"color": "terminal.ansiBrightRed",
+				"commands": ["npm run db:seed"]
+			},
+			{
+				"name": "DB Reset",
+				"icon": "database",
+				"color": "terminal.ansiBrightRed",
+				"commands": ["npm run db:reset"]
+			},
+			{
+				"name": "DB Studio",
+				"icon": "database",
+				"color": "terminal.ansiBrightRed",
+				"commands": ["npm run db:studio"]
+			}
+		]
+	}
+}

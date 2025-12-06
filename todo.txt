@@ -1,0 +1,15 @@
+• Update all helperText based on Starbucks
+
+Others:
+• Add manually under appendix: 
+    Employees 1-10
+    Outsourced Partners
+    Marketing Materials (Brochures)
+    Customer Testimonials/References
+    Additional Appendix Items
+
+Do last:
+• Do the outputs tab
+• Do the financial section
+• Generate PDF
+• Do the image uploading through cloudinary
