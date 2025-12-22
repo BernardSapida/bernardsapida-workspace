@@ -1,0 +1,23 @@
+Finance:
+• Save to database the Inputs
+• Create the Outputs (Reference: All* found in excel)
+
+Others:
+• Add manually under appendix: 
+    Employees 1-10
+    Outsourced Partners
+    Marketing Materials (Brochures)
+    Customer Testimonials/References
+    Additional Appendix Items
+
+Do last:
+• Do the outputs tab (Display all needed for docs - starts with FINAL_*)
+• Display the key in Chip if missing (Outputs)
+• Do the financial section
+• Generate PDF
+• Do the image uploading through cloudinary
+
+Note:
+• Think a plan to generate pdf (Specially graph for finance)
+• Identify parts/section of finance
+• You can do presentation page

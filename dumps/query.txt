@@ -1,0 +1,18 @@
+import { api } from "~/trpc/react";
+
+const { data, isLoading } = api.user.getUsers.useQuery({
+    filters: {
+        roles: roleFilter === "all" ? [] : (Array.from(roleFilter) as UserRole[]),
+        statuses:
+        statusFilter === "all"
+            ? []
+            : (Array.from(statusFilter) as UserStatus[]),
+        search: debouncedFilterValue,
+    },
+    pagination: {
+        page,
+        pageSize: rowsPerPage,
+        sortBy: (sortDescriptor?.column as string) || "createdAt",
+        sortOrder: sortDescriptor?.direction === "ascending" ? "asc" : "desc",
+    },
+});

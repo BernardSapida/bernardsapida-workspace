@@ -1,0 +1,29 @@
+import { api } from "~/trpc/react";
+
+const updateUser = api.user.updateUser.useMutation({
+    onSuccess: async () => {
+        addToast({
+        title: "Successfully updated",
+        description: "User successfully updated",
+        color: "success",
+        });
+        // await utils.user.get.invalidate();
+    },
+    onError: async (e) => {
+        addToast({
+        title: "Failed to update user",
+        description: e.message,
+        color: "danger",
+        });
+    },
+});
+
+updateUser.mutate({
+    id,
+    input: {
+        firstname: data.firstname,
+        lastname: data.lastname,
+        email: data.email,
+        role: data.role,
+    },
+});

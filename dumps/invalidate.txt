@@ -1,0 +1,8 @@
+const utils = api.useUtils();
+
+const invalidate = async () => {
+    await utils.user.getUser.invalidate({
+      id: "5gAVBRMKMhsTegOlOod9R2zNjYiKdMkE",
+    });
+    console.log("invalidated");
+  };
